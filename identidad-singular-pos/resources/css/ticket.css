@@ -1,0 +1,12 @@
+/* public/css/ticket.css */
+body { font-family: 'Courier New', Courier, monospace; width: 80mm; margin: 0; padding: 10px; }
+.text-center { text-align: center; }
+.header { margin-bottom: 10px; border-bottom: 1px dashed #000; padding-bottom: 5px; }
+.item-table { width: 100%; font-size: 14px; margin-bottom: 10px; }
+.total { border-top: 1px dashed #000; padding-top: 5px; font-weight: bold; font-size: 18px; }
+.footer { margin-top: 20px; font-size: 12px; }
+
+/* Ocultar botón al imprimir */
+@media print {
+    .no-print { display: none; }
+}

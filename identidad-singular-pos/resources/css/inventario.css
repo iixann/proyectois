@@ -1,0 +1,29 @@
+/* Estilos Base */
+body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+.container { max-width: 1200px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Botones y Buscador */
+.btn { padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; border: none; cursor: pointer; }
+.btn-green { background: #28a745; color: white; }
+.btn-orange { background: #ff9800; color: white; }
+.btn-blue { background: #007bff; color: white; }
+
+.search-container { margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap; }
+.input-search { padding: 10px; flex-grow: 1; min-width: 200px; border: 1px solid #ccc; border-radius: 5px; }
+
+/* Tabla Responsive */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { background: #eee; }
+th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+
+.stock-critico { background-color: #fff3f3; color: #d9534f; font-weight: bold; }
+.badge-baja { background: #d9534f; color: white; padding: 2px 6px; border-radius: 10px; font-size: 11px; }
+
+/* Mobile: Convertir tabla en bloques */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr { display: block; }
+    thead tr { position: absolute; top: -9999px; left: -9999px; }
+    tr { border: 1px solid #ccc; margin-bottom: 10px; background: #fff; }
+    td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; text-align: right; }
+    td:before { position: absolute; left: 10px; width: 45%; padding-right: 10px; white-space: nowrap; content: attr(data-label); font-weight: bold; text-align: left; }
+}
